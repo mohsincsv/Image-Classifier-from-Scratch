@@ -1,9 +1,8 @@
 # Image-Classification-for-a-City-Dog-Show
 
-![Alt text](workspace\pet_images\Beagle_01141.jpg =100x20)
-![Alt text](workspace\pet_images\Golden_retriever_05223.jpg =100x20)
-![Alt text](workspace\pet_images\Miniature_schnauzer_06884.jpg =100x20)
-![Alt text](workspace\pet_images\German_shepherd_dog_04890.jpg =100x20)
+<img src="workspace/pet_images/Beagle_01141.jpg"  width="300" height="300"><img src="workspace/pet_images/Golden_retriever_05223.jpg"  width="300" height="300">
+
+<img src="workspace/pet_images/Miniature_schnauzer_06884.jpg"  width="300" height="300"><img src="workspace/pet_images/German_shepherd_dog_04890.jpg"  width="300" height="300">
 
 ## Objective 
 The objective of this project is to improve programming skills using Python by applying an already developed image classifier to identify dog breeds. The classifier will be provided and the focus of the project is on using Python to utilize the classifier, rather than on creating the classifier itself. 
