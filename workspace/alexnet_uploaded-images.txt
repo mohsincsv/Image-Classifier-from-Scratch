@@ -1,0 +1,17 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 40 key-value pairs.
+Below are 10 of them:
+ 1 key:           Great_dane_05320.jpg  label:                 great dane
+ 2 key:               Beagle_01125.jpg  label:                     beagle
+ 3 key:               Collie_03797.jpg  label:                     collie
+ 4 key:            Dalmatian_04068.jpg  label:                  dalmatian
+ 5 key:  Miniature_schnauzer_06884.jpg  label:        miniature schnauzer
+ 6 key:  German_shepherd_dog_04890.jpg  label:        german shepherd dog
+ 7 key:              Basenji_00963.jpg  label:                    basenji
+ 8 key:                     cat_02.jpg  label:                        cat
+ 9 key:     Golden_retriever_05223.jpg  label:           golden retriever
+10 key:        great_horned_owl_02.jpg  label:           great horned owl
