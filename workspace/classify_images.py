@@ -68,7 +68,7 @@ def classify_images(images_dir, results_dic, model):
     
     for key in results_dic:
 
-        model_label = classifier(os.path.join(images_dir+key),model)
+        model_label = classifier(os.path.join(images_dir,key),model)
         model_label = model_label.lower().strip()
         lst = [str(model_label)]
         model_label = model_label.split(',')      
