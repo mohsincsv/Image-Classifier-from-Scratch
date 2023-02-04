@@ -18,8 +18,7 @@
 ##
 # Imports python modules
 from os import listdir
-
-# 
+ 
 def get_pet_labels(image_dir):
     """
     Creates a dictionary of pet labels (results_dic) based upon the filenames 
@@ -41,28 +40,29 @@ def get_pet_labels(image_dir):
     # function
     
     # Retrieve the filenames from folder pet_images/
-    filename_list = listdir(image_dir)
+    filename_list = listdir("pet_images/")
 
     pet_image = filename_list
     pet_name  = []
         
     for image in pet_image:
         
-        image = image.lower()
-        image = image.split('_')
-        
-        label = ""
+        if pet_image[0] != '.':
+            image = image.lower()
+            image = image.split('_')
 
-        # Loops to check if word in pet name is only
-        # alphabetic characters - if true append word
-        # to pet_name separated by trailing space 
-        for word in image:
-            if word.isalpha():
-                label += word + " "
-               
-        label = label[:-1]
-        label.strip()
-        pet_name.append(label)
+            label = ""
+
+            # Loops to check if word in pet name is only
+            # alphabetic characters - if true append word
+            # to pet_name separated by trailing space 
+            for word in image:
+                if word.isalpha():
+                    label += word + " "
+
+            label = label[:-1]
+            label.strip()
+            pet_name.append(label)
     
     # Creates empty dictionary named results_dic
     results_dic = dict()
@@ -71,13 +71,13 @@ def get_pet_labels(image_dir):
     items_in_dic = len(results_dic)
     # Adds new key-value pairs to dictionary ONLY when key doesn't already exist. This dictionary's value is
     # a List that contains only one item - the pet image label
-    if pet_image[0] != '.':
-        for idx in range(0, len(pet_image), 1):
-            if pet_image[idx] not in results_dic:
-                 results_dic[pet_image[idx]] = [pet_name[idx]]
-            else:
-                 print("** Warning: Key=", pet_image[idx], 
+    
+    for idx in range(0, len(pet_image), 1):
+        if pet_image[idx] not in results_dic:
+            results_dic[pet_image[idx]] = [pet_name[idx]]
+        else:
+            print("** Warning: Key=", pet_image[idx], 
                        "already exists in results_dic with value =", 
-                       results_dic[pet_image[idx]])
+                results_dic[pet_image[idx]])
 
     return results_dic
